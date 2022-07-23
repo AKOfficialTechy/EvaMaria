@@ -404,10 +404,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🔰Movie Updates🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('🔰Movie Updates🔰', url=f'https://t.me/+U8tOLSRjrNRjNjc1')
         ], [
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('GROUP', url='https://t.me/MalluMoviesGroup_MM')
+            InlineKeyboardButton('♻️GROUP♻️', url='https://t.me/MalluMoviesGroup_MM')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -438,7 +438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('GROUP', url='https://t.me/MalluMoviesGroup_MM'),
+            InlineKeyboardButton('♻️GROUP♻️', url='https://t.me/MalluMoviesGroup_MM'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
